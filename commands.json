@@ -1,0 +1,990 @@
+{
+ "subject": "A young woman in a red coat holding a cup of coffee on a city street",
+ "commands": [
+  {
+   "cmd": "/lowangle",
+   "cat": "Camera & Angles",
+   "meaning": "Camera below the subject for a stronger, more dominant frame."
+  },
+  {
+   "cmd": "/highangle",
+   "cat": "Camera & Angles",
+   "meaning": "Camera above the subject for scale, vulnerability or graphic composition."
+  },
+  {
+   "cmd": "/droneview",
+   "cat": "Camera & Angles",
+   "meaning": "Aerial top-down or oblique view with strong spatial scale."
+  },
+  {
+   "cmd": "/birdsview",
+   "cat": "Camera & Angles",
+   "meaning": "High overhead viewpoint looking directly into the scene."
+  },
+  {
+   "cmd": "/wormsview",
+   "cat": "Camera & Angles",
+   "meaning": "Extreme ground-level perspective looking dramatically upward."
+  },
+  {
+   "cmd": "/POV",
+   "cat": "Camera & Angles",
+   "meaning": "First-person viewpoint as if the viewer is inside the scene."
+  },
+  {
+   "cmd": "/OTS",
+   "cat": "Camera & Angles",
+   "meaning": "Over-the-shoulder composition for depth and cinematic storytelling."
+  },
+  {
+   "cmd": "/dutchangle",
+   "cat": "Camera & Angles",
+   "meaning": "Tilted horizon for tension, energy or editorial attitude."
+  },
+  {
+   "cmd": "/eyelevel",
+   "cat": "Camera & Angles",
+   "meaning": "Natural human-height perspective with realistic proportions."
+  },
+  {
+   "cmd": "/isometric",
+   "cat": "Camera & Angles",
+   "meaning": "Clean three-quarter geometric angle showing multiple sides at once."
+  },
+  {
+   "cmd": "/topdown",
+   "cat": "Camera & Angles",
+   "meaning": "Straight overhead camera for layouts, products or graphic scenes."
+  },
+  {
+   "cmd": "/groundcam",
+   "cat": "Camera & Angles",
+   "meaning": "Camera almost touching the ground for a dramatic foreground."
+  },
+  {
+   "cmd": "/shouldercam",
+   "cat": "Camera & Angles",
+   "meaning": "Loose shoulder-mounted perspective with believable human movement."
+  },
+  {
+   "cmd": "/wideangle",
+   "cat": "Camera & Angles",
+   "meaning": "Use a wide lens to exaggerate depth and environmental scale."
+  },
+  {
+   "cmd": "/telephoto",
+   "cat": "Camera & Angles",
+   "meaning": "Compressed perspective with a premium long-lens photography feel."
+  },
+  {
+   "cmd": "/fisheye",
+   "cat": "Camera & Angles",
+   "meaning": "Extreme wide distortion for a bold, playful, unconventional image."
+  },
+  {
+   "cmd": "/impossibleangle",
+   "cat": "Camera & Angles",
+   "meaning": "A camera position that feels physically impossible but still believable."
+  },
+  {
+   "cmd": "/sideprofile",
+   "cat": "Camera & Angles",
+   "meaning": "Strict side-angle composition emphasizing silhouette and shape."
+  },
+  {
+   "cmd": "/threequarter",
+   "cat": "Camera & Angles",
+   "meaning": "Three-quarter camera position for a dimensional portrait or product view."
+  },
+  {
+   "cmd": "/rearview",
+   "cat": "Camera & Angles",
+   "meaning": "Frame the subject from behind for mystery, scale or storytelling."
+  },
+  {
+   "cmd": "/cinematic",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "High-end movie-still look with controlled lighting, depth and composition."
+  },
+  {
+   "cmd": "/filmstill",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Natural narrative frame that feels pulled from a real film scene."
+  },
+  {
+   "cmd": "/anamorphic",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Wide cinema lens character with subtle flare and stretched depth."
+  },
+  {
+   "cmd": "/imax",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Large-format scale, immersive detail and dramatic perspective."
+  },
+  {
+   "cmd": "/neonnoir",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Dark cinematic mood with neon accents, reflections and contrast."
+  },
+  {
+   "cmd": "/noir",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Moody black-and-white crime-film lighting with strong shadow shapes."
+  },
+  {
+   "cmd": "/arthouse",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Restrained, unusual, visually intentional independent-film styling."
+  },
+  {
+   "cmd": "/indiefilm",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Intimate, naturalistic filmmaking with understated imperfections."
+  },
+  {
+   "cmd": "/vintagefilm",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Analog film grain, halation and nostalgic color response."
+  },
+  {
+   "cmd": "/35mm",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Classic 35mm texture with believable grain and lens response."
+  },
+  {
+   "cmd": "/16mm",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Rougher documentary film texture with organic grain and softer detail."
+  },
+  {
+   "cmd": "/70scinema",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Warm textured seventies-inspired photography and production design."
+  },
+  {
+   "cmd": "/80saction",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Bold action-movie contrast, atmosphere and heroic framing."
+  },
+  {
+   "cmd": "/dreamfilm",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Soft surreal cinema mood with elegant haze and emotional lighting."
+  },
+  {
+   "cmd": "/thrillerlook",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Tense low-key lighting with controlled shadows and suspense."
+  },
+  {
+   "cmd": "/romancefilm",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Soft cinematic intimacy with flattering natural light and depth."
+  },
+  {
+   "cmd": "/hollywoodcampaign",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Polished studio cinema aesthetic with premium commercial scale."
+  },
+  {
+   "cmd": "/handheldfilm",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Believable handheld framing with natural imperfect camera energy."
+  },
+  {
+   "cmd": "/oneframescene",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Compose one strong frame that clearly communicates a larger story."
+  },
+  {
+   "cmd": "/filmgrain",
+   "cat": "Cinematic & Film Looks",
+   "meaning": "Add subtle realistic grain without making the image look filtered."
+  },
+  {
+   "cmd": "/producthero",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Make the product the unmistakable hero of the composition."
+  },
+  {
+   "cmd": "/packshot",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Clean studio product presentation suitable for brand or e-commerce use."
+  },
+  {
+   "cmd": "/luxuryad",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Premium restrained advertising with immaculate materials and detail."
+  },
+  {
+   "cmd": "/editorialad",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Fashion-forward magazine advertising with sophisticated composition."
+  },
+  {
+   "cmd": "/billboard",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Create a bold outdoor-campaign visual with instant readability."
+  },
+  {
+   "cmd": "/3dbillboard",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Turn the product scene into an oversized dimensional billboard illusion."
+  },
+  {
+   "cmd": "/keyvisual",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Build one strong campaign image that defines the visual direction."
+  },
+  {
+   "cmd": "/brandworld",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Expand the product into a complete visual universe around its identity."
+  },
+  {
+   "cmd": "/packaging",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Show premium packaging design as the central brand object."
+  },
+  {
+   "cmd": "/socialads",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Create an attention-grabbing social campaign image with clear hierarchy."
+  },
+  {
+   "cmd": "/metaads",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Performance-ad style visual designed to stop the scroll quickly."
+  },
+  {
+   "cmd": "/macroproduct",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Extreme detail shot focusing on material, texture and craftsmanship."
+  },
+  {
+   "cmd": "/beautyshot",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Polished hero image emphasizing finish, shape and premium surface quality."
+  },
+  {
+   "cmd": "/floatingproduct",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Suspend the product cleanly in space with believable shadows."
+  },
+  {
+   "cmd": "/handshot",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Show the product naturally held in a human hand for scale and lifestyle."
+  },
+  {
+   "cmd": "/candidproduct",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Place the product in a believable spontaneous lifestyle moment."
+  },
+  {
+   "cmd": "/datevisual",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Create a campaign visual built around a launch date or key date."
+  },
+  {
+   "cmd": "/productworld",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Build an environment inspired directly by the product's form or ingredients."
+  },
+  {
+   "cmd": "/vanityshot",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Elegant beauty-table or dressing-area product presentation."
+  },
+  {
+   "cmd": "/campaignposter",
+   "cat": "Product & Brand Visuals",
+   "meaning": "Create a finished premium advertising poster around the product."
+  },
+  {
+   "cmd": "/explodedview",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Separate components in space while keeping the full object readable."
+  },
+  {
+   "cmd": "/360view",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Show multiple consistent angles of the same object as a turntable study."
+  },
+  {
+   "cmd": "/blueprint",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Technical blueprint-style visual with structured construction information."
+  },
+  {
+   "cmd": "/xraystyle",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Transparent X-ray visualization revealing internal structure and layers."
+  },
+  {
+   "cmd": "/cutaway",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Remove a section of the object to reveal its interior construction."
+  },
+  {
+   "cmd": "/anatomy",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Break down the subject into its internal parts or functional layers."
+  },
+  {
+   "cmd": "/materialstudy",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Show the object as a detailed study of its materials and surfaces."
+  },
+  {
+   "cmd": "/wireframe",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Convert the object into a clean technical mesh or wireframe view."
+  },
+  {
+   "cmd": "/cadview",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Precise industrial CAD-style visualization with engineered proportions."
+  },
+  {
+   "cmd": "/sectionview",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Display a clean sectional slice through the object or environment."
+  },
+  {
+   "cmd": "/partsmap",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Organize all major components around the central object for easy reading."
+  },
+  {
+   "cmd": "/assemblyview",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Show how separated parts logically fit together into the final object."
+  },
+  {
+   "cmd": "/mechanicalstudy",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Highlight mechanical details, joints, fasteners and functional structure."
+  },
+  {
+   "cmd": "/transparentbody",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Make the outer shell translucent while retaining realistic depth."
+  },
+  {
+   "cmd": "/crosssection",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Slice through the subject to show layered interior construction."
+  },
+  {
+   "cmd": "/prototype",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Present the object as a refined industrial design prototype."
+  },
+  {
+   "cmd": "/schematic",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Simplify the object into a clean technical diagram-like visualization."
+  },
+  {
+   "cmd": "/dimensionstudy",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Emphasize proportions, size relationships and structural geometry."
+  },
+  {
+   "cmd": "/componentgrid",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Arrange isolated object parts into a clean organized grid."
+  },
+  {
+   "cmd": "/productdiagram",
+   "cat": "3D, Technical & Object Studies",
+   "meaning": "Create an easy-to-understand technical product breakdown image."
+  },
+  {
+   "cmd": "/motionblur",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Directional blur that communicates speed while keeping the subject readable."
+  },
+  {
+   "cmd": "/speedramp",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Slow-fast-slow action language captured in a single high-energy frame."
+  },
+  {
+   "cmd": "/freezeaction",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Freeze a fast moment with crisp detail and dramatic timing."
+  },
+  {
+   "cmd": "/midair",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Capture the subject at the peak of a jump or suspended movement."
+  },
+  {
+   "cmd": "/impactframe",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Show the exact instant of impact with controlled debris and energy."
+  },
+  {
+   "cmd": "/runningframe",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Dynamic running pose with cinematic perspective and environmental motion."
+  },
+  {
+   "cmd": "/collision",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Bring multiple visual elements together in a dramatic controlled moment."
+  },
+  {
+   "cmd": "/chaosframe",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Dense energetic composition with several simultaneous actions."
+  },
+  {
+   "cmd": "/windblown",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Use believable wind to animate hair, fabric, smoke or loose objects."
+  },
+  {
+   "cmd": "/whipmotion",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Fast lateral camera movement with directional streaking and energy."
+  },
+  {
+   "cmd": "/panning",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Track a moving subject while the background streaks naturally."
+  },
+  {
+   "cmd": "/spinfrozen",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Capture rotational movement at a sharp visually interesting moment."
+  },
+  {
+   "cmd": "/speedtrail",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Add realistic motion trails that follow the subject's direction."
+  },
+  {
+   "cmd": "/dustimpact",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Use dust or fine particles to emphasize movement and contact."
+  },
+  {
+   "cmd": "/splashframe",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Freeze water, liquid or spray in a dramatic high-speed moment."
+  },
+  {
+   "cmd": "/fabricmotion",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Use flowing fabric as a strong visual movement element."
+  },
+  {
+   "cmd": "/actionportrait",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Combine a readable portrait with believable physical motion."
+  },
+  {
+   "cmd": "/dynamicpose",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Create an energetic body pose with strong lines and weight distribution."
+  },
+  {
+   "cmd": "/rushframe",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Make the whole frame feel fast, urgent and captured mid-movement."
+  },
+  {
+   "cmd": "/motionstack",
+   "cat": "Motion, Action & Energy",
+   "meaning": "Layer repeated motion positions to visualize movement through space."
+  },
+  {
+   "cmd": "/goldenhour",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Warm low-angle sunlight with soft highlights and long natural shadows."
+  },
+  {
+   "cmd": "/bluehour",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Cool twilight lighting with subtle ambient sky glow."
+  },
+  {
+   "cmd": "/softlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Large diffused source for clean flattering illumination."
+  },
+  {
+   "cmd": "/hardlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Crisp directional light with defined graphic shadows."
+  },
+  {
+   "cmd": "/rimlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Bright edge light separating the subject from the background."
+  },
+  {
+   "cmd": "/backlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Light from behind for glow, silhouette and depth."
+  },
+  {
+   "cmd": "/spotlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Focused theatrical light isolating the subject from the environment."
+  },
+  {
+   "cmd": "/chiaroscuro",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Dramatic contrast between light and shadow inspired by classical painting."
+  },
+  {
+   "cmd": "/silhouette",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Expose for the background so the subject becomes a bold dark shape."
+  },
+  {
+   "cmd": "/practicallight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Use visible lamps, screens or signs as believable scene light sources."
+  },
+  {
+   "cmd": "/windowlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Natural directional daylight entering from a window or opening."
+  },
+  {
+   "cmd": "/volumetriclight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Visible light rays through haze, smoke or atmospheric particles."
+  },
+  {
+   "cmd": "/neonlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Use colored neon sources for modern night-time atmosphere."
+  },
+  {
+   "cmd": "/studiosoftbox",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Controlled commercial studio light with smooth gradients and clean reflections."
+  },
+  {
+   "cmd": "/toplight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Direct light from above for sculpted highlights and deeper facial shadows."
+  },
+  {
+   "cmd": "/underlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Light from below for unusual dramatic or surreal shaping."
+  },
+  {
+   "cmd": "/sunbeam",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Strong realistic sun shaft cutting through the frame."
+  },
+  {
+   "cmd": "/foglight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Combine soft haze with diffused beams for cinematic atmosphere."
+  },
+  {
+   "cmd": "/moonlight",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Cool directional night lighting with believable low-light contrast."
+  },
+  {
+   "cmd": "/highkey",
+   "cat": "Lighting & Atmosphere",
+   "meaning": "Bright clean exposure with soft shadows and minimal darkness."
+  },
+  {
+   "cmd": "/surrealism",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Create a believable photographic scene governed by surreal visual logic."
+  },
+  {
+   "cmd": "/gravityoff",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Make objects or people float as if gravity has been switched off."
+  },
+  {
+   "cmd": "/giantobject",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Turn an ordinary object into a monumental part of the environment."
+  },
+  {
+   "cmd": "/miniworld",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Build a tiny believable world around or inside the main subject."
+  },
+  {
+   "cmd": "/mirrorworld",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Create a mirrored alternate reality with deliberate visual symmetry."
+  },
+  {
+   "cmd": "/dreamlogic",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Combine strange visual relationships that still feel coherent and intentional."
+  },
+  {
+   "cmd": "/infinite",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Repeat or extend an element into an impossible endless environment."
+  },
+  {
+   "cmd": "/portal",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Connect two different spaces through a believable visual portal."
+  },
+  {
+   "cmd": "/scaleillusion",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Manipulate scale so objects appear dramatically oversized or tiny."
+  },
+  {
+   "cmd": "/realityshift",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Blend incompatible environments into one convincing photographic scene."
+  },
+  {
+   "cmd": "/levitation",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Make the main subject float naturally with believable lighting and shadow."
+  },
+  {
+   "cmd": "/meltingobject",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Transform a solid object into a surreal melting form while retaining identity."
+  },
+  {
+   "cmd": "/foldedworld",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Bend architecture or landscape into an impossible folded environment."
+  },
+  {
+   "cmd": "/endlessroom",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Create a room or space that repeats far beyond physical logic."
+  },
+  {
+   "cmd": "/objectportal",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Use the product or object itself as an entrance into another world."
+  },
+  {
+   "cmd": "/worldinside",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Reveal a complete environment living inside the main object."
+  },
+  {
+   "cmd": "/splitreality",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Divide one frame into two visually different but connected realities."
+  },
+  {
+   "cmd": "/floatingarchitecture",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Suspend buildings or structures in the air with believable scale."
+  },
+  {
+   "cmd": "/impossiblescale",
+   "cat": "Surreal & Impossible Visuals",
+   "meaning": "Combine extreme scale differences into one realistic-looking photograph."
+  },
+  {
+   "cmd": "/fashioneditorial",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "High-fashion magazine composition with deliberate styling and attitude."
+  },
+  {
+   "cmd": "/modelcampaign",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Create a polished campaign shoot built around a model and product."
+  },
+  {
+   "cmd": "/fullbody",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Full-body composition with clean readable styling and pose."
+  },
+  {
+   "cmd": "/beautycampaign",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Premium beauty-ad photography with clean skin, makeup and lighting."
+  },
+  {
+   "cmd": "/streeteditorial",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Fashion imagery shot with an urban street-photography attitude."
+  },
+  {
+   "cmd": "/gardeneditorial",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Editorial model shoot in a lush outdoor garden environment."
+  },
+  {
+   "cmd": "/resortcampaign",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Premium lifestyle-fashion campaign in a destination or resort setting."
+  },
+  {
+   "cmd": "/studiofashion",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Controlled studio fashion shoot with deliberate pose and lighting."
+  },
+  {
+   "cmd": "/lookbook",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Consistent fashion presentation designed to showcase styling clearly."
+  },
+  {
+   "cmd": "/coverstory",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Magazine-cover-ready portrait with strong hierarchy and negative space."
+  },
+  {
+   "cmd": "/paparazzi",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Flash-heavy candid celebrity-style photography with imperfect framing."
+  },
+  {
+   "cmd": "/candidmodel",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Natural unposed model moment that still feels campaign-ready."
+  },
+  {
+   "cmd": "/lowanglepose",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Model pose photographed from below for confidence and presence."
+  },
+  {
+   "cmd": "/editorialpose",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Stylized fashion pose with strong body lines and expressive attitude."
+  },
+  {
+   "cmd": "/walkingpose",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Capture the model mid-stride with natural body movement."
+  },
+  {
+   "cmd": "/seatededitorial",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Fashion portrait built around a strong seated composition."
+  },
+  {
+   "cmd": "/sideprofilepose",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Strict side-profile model framing with clean silhouette."
+  },
+  {
+   "cmd": "/flashfashion",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Hard on-camera flash look inspired by contemporary editorial photography."
+  },
+  {
+   "cmd": "/minimalfashion",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Clean minimal fashion image with simple background and styling."
+  },
+  {
+   "cmd": "/campaigncloseup",
+   "cat": "Fashion, Model & Editorial Shoots",
+   "meaning": "Tight model or beauty framing designed for premium advertising."
+  },
+  {
+   "cmd": "/BTS",
+   "cat": "BTS & Creative Production",
+   "meaning": "Reveal the real production setup around the finished-looking shot."
+  },
+  {
+   "cmd": "/behindthescenes",
+   "cat": "BTS & Creative Production",
+   "meaning": "Show camera, crew, lights, props and environment behind the image."
+  },
+  {
+   "cmd": "/setphoto",
+   "cat": "BTS & Creative Production",
+   "meaning": "Photograph the subject naturally on a professional production set."
+  },
+  {
+   "cmd": "/camerarig",
+   "cat": "BTS & Creative Production",
+   "meaning": "Feature the camera body, lens, tripod, monitor and rigging."
+  },
+  {
+   "cmd": "/lightingrig",
+   "cat": "BTS & Creative Production",
+   "meaning": "Reveal softboxes, flags, stands and lighting modifiers around the scene."
+  },
+  {
+   "cmd": "/directorview",
+   "cat": "BTS & Creative Production",
+   "meaning": "Frame the setup from the director's working position."
+  },
+  {
+   "cmd": "/videovillage",
+   "cat": "BTS & Creative Production",
+   "meaning": "Show the production monitor and crew reviewing the shot."
+  },
+  {
+   "cmd": "/studiofloor",
+   "cat": "BTS & Creative Production",
+   "meaning": "Wide view of the functioning photo or film studio."
+  },
+  {
+   "cmd": "/makingof",
+   "cat": "BTS & Creative Production",
+   "meaning": "Cinematic making-of photograph showing the craft behind the final image."
+  },
+  {
+   "cmd": "/beforeafter",
+   "cat": "BTS & Creative Production",
+   "meaning": "Compare the raw setup with the polished final visual."
+  },
+  {
+   "cmd": "/crewshot",
+   "cat": "BTS & Creative Production",
+   "meaning": "Include the creative crew actively working around the subject."
+  },
+  {
+   "cmd": "/photographersetup",
+   "cat": "BTS & Creative Production",
+   "meaning": "Show photographer position, camera and lighting arrangement clearly."
+  },
+  {
+   "cmd": "/cinematographersetup",
+   "cat": "BTS & Creative Production",
+   "meaning": "Show a film-production camera package and lighting in context."
+  },
+  {
+   "cmd": "/monitorframe",
+   "cat": "BTS & Creative Production",
+   "meaning": "Compose around an on-set monitor displaying the hero shot."
+  },
+  {
+   "cmd": "/boomoperator",
+   "cat": "BTS & Creative Production",
+   "meaning": "Include believable sound-recording crew as part of the set atmosphere."
+  },
+  {
+   "cmd": "/clapperboard",
+   "cat": "BTS & Creative Production",
+   "meaning": "Feature a clapperboard moment to instantly signal film production."
+  },
+  {
+   "cmd": "/studioprep",
+   "cat": "BTS & Creative Production",
+   "meaning": "Show the subject or product being prepared before the final shoot."
+  },
+  {
+   "cmd": "/propstyling",
+   "cat": "BTS & Creative Production",
+   "meaning": "Reveal hands and crew arranging props around the product."
+  },
+  {
+   "cmd": "/lighttest",
+   "cat": "BTS & Creative Production",
+   "meaning": "Create a realistic pre-shoot lighting test frame."
+  },
+  {
+   "cmd": "/setbuild",
+   "cat": "BTS & Creative Production",
+   "meaning": "Show the physical construction or dressing of the production environment."
+  },
+  {
+   "cmd": "/thermal",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Thermal-camera-inspired visual with graphic temperature mapping."
+  },
+  {
+   "cmd": "/throughglass",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Shoot through glass with reflections, refraction and layered depth."
+  },
+  {
+   "cmd": "/reflection",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Build the composition around mirrors, water or polished reflections."
+  },
+  {
+   "cmd": "/underwater",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Submerged perspective with believable light, particles and distortion."
+  },
+  {
+   "cmd": "/tinyplanet",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Wrap the environment into a surreal spherical tiny-planet composition."
+  },
+  {
+   "cmd": "/contactsheet",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Present multiple related frames as a cohesive photographic contact sheet."
+  },
+  {
+   "cmd": "/polaroid",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Instant-film aesthetic with casual framing and soft nostalgic contrast."
+  },
+  {
+   "cmd": "/disposablecam",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Imperfect consumer-camera flash look with nostalgic character."
+  },
+  {
+   "cmd": "/steppingcamera",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Show repeated camera positions or a staged camera-movement progression."
+  },
+  {
+   "cmd": "/mockup",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Place the design or product realistically into a finished presentation mockup."
+  },
+  {
+   "cmd": "/papercut",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Transform the scene into layered dimensional paper-cut artwork."
+  },
+  {
+   "cmd": "/neonoutline",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Trace important forms with controlled luminous line accents."
+  },
+  {
+   "cmd": "/glassart",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Rebuild the main form using sculptural glass and transparent materials."
+  },
+  {
+   "cmd": "/texturestudy",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Turn the subject into a close study of surface, finish and tactile detail."
+  },
+  {
+   "cmd": "/chromeeffect",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Give the subject a polished reflective chrome material treatment."
+  },
+  {
+   "cmd": "/holographic",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Use iridescent holographic surfaces and shifting reflective detail."
+  },
+  {
+   "cmd": "/scanline",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Add a subtle digital scanning or sensor-capture visual treatment."
+  },
+  {
+   "cmd": "/conceptart",
+   "cat": "Experimental & Creative Effects",
+   "meaning": "Create a high-end concept-art image while retaining photographic realism."
+  }
+ ]
+}

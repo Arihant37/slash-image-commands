@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Slash Image Commands</title>
+<meta name="description" content="197 slash commands for AI image prompts. See what each one does to the same picture, then copy the prompt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ee;--card:#fff;--ink:#1b1a17;--muted:#6b665d;--line:#e4ded3;--accent:#c2410c;--chip:#efe9df}
+@media (prefers-color-scheme:dark){:root{--bg:#141311;--card:#1d1c19;--ink:#f1ede6;--muted:#a39d92;--line:#2e2c28;--accent:#fb923c;--chip:#26241f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
+header{max-width:1200px;margin:0 auto;padding:56px 16px 24px}
+h1{font:600 clamp(32px,6vw,56px)/1.05 Fraunces,Georgia,serif;margin:0 0 12px;letter-spacing:-.02em}
+h1 em{color:var(--accent);font-style:normal}
+.lede{max-width:640px;color:var(--muted);font-size:17px;margin:0}
+.subject{margin-top:18px;display:inline-block;background:var(--chip);padding:8px 12px;border-radius:8px;font-size:14px}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:1200px;margin:0 auto;padding:12px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+input{flex:1 1 220px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+.cats{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1 1 100%}
+.cats button{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;border-radius:999px;font:500 13px Inter;cursor:pointer}
+.cats button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+main{max-width:1200px;margin:0 auto;padding:24px 16px 80px}
+.count{color:var(--muted);font-size:13px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pic{aspect-ratio:4/3;background:linear-gradient(135deg,var(--chip),var(--line));display:grid;place-items:center;color:var(--muted);font-size:13px}
+.pic img{width:100%;height:100%;object-fit:cover;display:block}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cmd{font:600 18px ui-monospace,Consolas,monospace;color:var(--accent)}
+.cat{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.meaning{margin:0;flex:1}
+.copy{margin-top:8px;align-self:flex-start;border:0;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font:600 13px Inter;cursor:pointer}
+.copy:focus-visible,.cats button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 40px}
+</style>
+</head>
+<body>
+<header>
+  <h1>One picture. <em>197</em> slash commands.</h1>
+  <p class="lede">Add a short slash command to any AI image prompt (Gemini, ChatGPT, Midjourney, Firefly) to control the camera, light, mood or style. Every example below starts from the same subject, so you can see exactly what each command changes.</p>
+  <div class="subject" id="subject"></div>
+</header>
+<div class="bar"><div class="bar-in">
+  <input id="q" type="search" placeholder="Search commands, e.g. light, drone, retro" aria-label="Search commands">
+  <div class="cats" id="cats" role="group" aria-label="Categories"></div>
+</div></div>
+<main>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</main>
+<footer>Tip: stack 2–4 commands, e.g. <code>/lowangle /goldenhour /cinematic</code>.</footer>
+<script>
+(async () => {
+  const data = await (await fetch('commands.json')).json();
+  const S = data.subject;
+  document.getElementById('subject').textContent = 'Example subject: ' + S;
+  const cats = ['All', ...new Set(data.commands.map(c => c.cat))];
+  let cat = 'All';
+  const catsEl = document.getElementById('cats'), grid = document.getElementById('grid'), q = document.getElementById('q');
+  const prompt = c => `${S}. ${c.meaning} No text or watermarks.`;
+  const slug = c => c.cmd.slice(1);
+  catsEl.innerHTML = cats.map(c => `<button aria-pressed="${c === cat}">${c}</button>`).join('');
+  catsEl.onclick = e => { if (e.target.tagName !== 'BUTTON') return; cat = e.target.textContent;
+    [...catsEl.children].forEach(b => b.setAttribute('aria-pressed', b.textContent === cat)); render(); };
+  q.oninput = render;
+  function render() {
+    const s = q.value.trim().toLowerCase();
+    const list = data.commands.filter(c => (cat === 'All' || c.cat === cat) &&
+      (!s || (c.cmd + ' ' + c.meaning + ' ' + c.cat).toLowerCase().includes(s)));
+    document.getElementById('count').textContent = list.length + ' commands';
+    grid.innerHTML = list.map((c, i) => `<article class="card">
+      <div class="pic"><img src="images/${slug(c)}.jpg" alt="${c.cmd} example: ${c.meaning}" loading="lazy" onerror="this.replaceWith('Example image coming soon')"></div>
+      <div class="body"><div class="cmd">${c.cmd}</div><div class="cat">${c.cat}</div>
+      <p class="meaning">${c.meaning}</p>
+      <button class="copy" data-i="${data.commands.indexOf(c)}">Copy prompt</button></div></article>`).join('');
+  }
+  grid.onclick = async e => { const b = e.target.closest('.copy'); if (!b) return;
+    await navigator.clipboard.writeText(prompt(data.commands[b.dataset.i]));
+    b.textContent = 'Copied!'; setTimeout(() => b.textContent = 'Copy prompt', 1500); };
+  render();
+})();
+</script>
+</body>
+</html>
