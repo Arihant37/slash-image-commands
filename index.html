@@ -40,8 +40,8 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 40px}
 </head>
 <body>
 <header>
-  <h1>One picture. <em>197</em> slash commands.</h1>
-  <p class="lede">Add a short slash command to any AI image prompt (Gemini, ChatGPT, Midjourney, Firefly) to control the camera, light, mood or style. Every example below starts from the same subject, so you can see exactly what each command changes.</p>
+  <h1>One picture. <em>215</em> slash commands.</h1>
+  <p class="lede">Add a short slash command to any AI image prompt (Gemini, ChatGPT, Midjourney, Firefly) to control the camera, light, mood or style. Every example below starts from the same subject, so you can see exactly what each command changes. <strong>New for students:</strong> 18 learning commands that explain one concept (photosynthesis) as a diagram, flowchart, mind map, comic and more.</p>
   <div class="subject" id="subject"></div>
 </header>
 <div class="bar"><div class="bar-in">
@@ -58,10 +58,10 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 40px}
   const data = await (await fetch('commands.json')).json();
   const S = data.subject;
   document.getElementById('subject').textContent = 'Example subject: ' + S;
-  const cats = ['All', ...new Set(data.commands.map(c => c.cat))];
+  const cats = ['All', 'Students & Learning', ...new Set(data.commands.map(c => c.cat).filter(c => c !== 'Students & Learning'))];
   let cat = 'All';
   const catsEl = document.getElementById('cats'), grid = document.getElementById('grid'), q = document.getElementById('q');
-  const prompt = c => `${S}. ${c.meaning} No text or watermarks.`;
+  const prompt = c => c.subject ? `${c.subject}. ${c.meaning} Short, correctly spelled labels only. No watermarks.` : `${S}. ${c.meaning} No text or watermarks.`;
   const slug = c => c.cmd.slice(1);
   catsEl.innerHTML = cats.map(c => `<button aria-pressed="${c === cat}">${c}</button>`).join('');
   catsEl.onclick = e => { if (e.target.tagName !== 'BUTTON') return; cat = e.target.textContent;
@@ -75,7 +75,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 40px}
     grid.innerHTML = list.map((c, i) => `<article class="card">
       <div class="pic"><img src="images/${slug(c)}.jpg" alt="${c.cmd} example: ${c.meaning}" loading="lazy" onerror="this.replaceWith('Example image coming soon')"></div>
       <div class="body"><div class="cmd">${c.cmd}</div><div class="cat">${c.cat}</div>
-      <p class="meaning">${c.meaning}</p>
+      <p class="meaning">${c.meaning}</p>${c.subject ? `<div class="cat">Example: ${c.subject}</div>` : ""}
       <button class="copy" data-i="${data.commands.indexOf(c)}">Copy prompt</button></div></article>`).join('');
   }
   grid.onclick = async e => { const b = e.target.closest('.copy'); if (!b) return;

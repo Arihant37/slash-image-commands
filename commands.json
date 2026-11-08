@@ -985,6 +985,114 @@
    "cmd": "/conceptart",
    "cat": "Experimental & Creative Effects",
    "meaning": "Create a high-end concept-art image while retaining photographic realism."
+  },
+  {
+   "cmd": "/diagram",
+   "cat": "Students & Learning",
+   "meaning": "Clean labeled science diagram with arrows and short labels, white background, textbook style.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/flowchart",
+   "cat": "Students & Learning",
+   "meaning": "Explain it as a step-by-step flowchart with boxes and arrows, left to right, simple icons.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/mindmap",
+   "cat": "Students & Learning",
+   "meaning": "Mind map with the main idea in the centre and colourful branches for each sub-idea.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/infographic",
+   "cat": "Students & Learning",
+   "meaning": "Vertical infographic: big title area, 3-5 numbered sections with icons and small charts.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/stepbystep",
+   "cat": "Students & Learning",
+   "meaning": "Four-panel sequence showing the process in order, numbered 1 to 4.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/timeline",
+   "cat": "Students & Learning",
+   "meaning": "Horizontal timeline with key stages marked as dots and short labels.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/compare",
+   "cat": "Students & Learning",
+   "meaning": "Side-by-side comparison of two things with matching labels, split layout.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/sketchnote",
+   "cat": "Students & Learning",
+   "meaning": "Hand-drawn sketchnote: doodles, arrows, boxed key words, marker on white paper.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/whiteboard",
+   "cat": "Students & Learning",
+   "meaning": "Teacher's whiteboard drawing in blue and black marker with simple arrows.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/chalkboard",
+   "cat": "Students & Learning",
+   "meaning": "Chalk drawing on a green classroom chalkboard, white and coloured chalk.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/comicexplainer",
+   "cat": "Students & Learning",
+   "meaning": "Friendly comic strip with a curious student character asking and a guide explaining.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/kidscartoon",
+   "cat": "Students & Learning",
+   "meaning": "Bright flat cartoon for children, round shapes, smiling characters, big simple labels.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/flashcard",
+   "cat": "Students & Learning",
+   "meaning": "Single study flashcard: one big clear picture with one key word, plenty of white space.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/mnemonic",
+   "cat": "Students & Learning",
+   "meaning": "Memorable funny visual metaphor that helps remember the concept.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/zoomlevels",
+   "cat": "Students & Learning",
+   "meaning": "Three zoom levels in one picture: whole object, close-up, microscopic view.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/claymodel",
+   "cat": "Students & Learning",
+   "meaning": "Looks like a handmade clay classroom model, soft lighting, tabletop.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/3dmodel",
+   "cat": "Students & Learning",
+   "meaning": "Clean 3D educational model on a plain background, soft studio light, parts slightly separated.",
+   "subject": "How photosynthesis works in a green leaf"
+  },
+  {
+   "cmd": "/notesheet",
+   "cat": "Students & Learning",
+   "meaning": "Neat revision notes page with headings, highlighted words and small drawings.",
+   "subject": "How photosynthesis works in a green leaf"
   }
  ]
 }
