@@ -69,7 +69,7 @@ code{background:var(--chip);padding:2px 6px;border-radius:6px}
   const cats = ['All', 'Students & Learning', ...new Set(data.commands.map(c => c.cat).filter(c => c !== 'Students & Learning'))];
   let cat = 'All';
   const catsEl = document.getElementById('cats'), grid = document.getElementById('grid'), q = document.getElementById('q');
-  const prompt = c => c.subject ? `${c.subject}. ${c.meaning} Short, correctly spelled labels only. No watermarks.` : `${S}. ${c.meaning} No text or watermarks.`;
+  const prompt = c => c.subject ? `${c.subject} ${c.cmd} (${c.meaning}) Short, correctly spelled labels only. No watermarks.` : `${S} ${c.cmd} (${c.meaning}) No text or watermarks.`;
   const slug = c => c.cmd.slice(1);
   catsEl.innerHTML = cats.map(c => `<button aria-pressed="${c === cat}">${c}</button>`).join('');
   catsEl.onclick = e => { if (e.target.tagName !== 'BUTTON') return; cat = e.target.textContent;
