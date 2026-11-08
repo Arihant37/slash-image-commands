@@ -6,41 +6,49 @@
 <title>Slash Image Commands</title>
 <meta name="description" content="197 slash commands for AI image prompts. See what each one does to the same picture, then copy the prompt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f3ee;--card:#fff;--ink:#1b1a17;--muted:#6b665d;--line:#e4ded3;--accent:#c2410c;--chip:#efe9df}
-@media (prefers-color-scheme:dark){:root{--bg:#141311;--card:#1d1c19;--ink:#f1ede6;--muted:#a39d92;--line:#2e2c28;--accent:#fb923c;--chip:#26241f}}
+:root{--bg:#0b0b12;--card:#15151f;--ink:#f5f3ff;--muted:#a5a3c0;--line:#2a2a3d;--accent:#c6ff3d;--pink:#ff4fd8;--blue:#4fc3ff;--chip:#1f1f2e}
+:root[data-theme="light"]{--bg:#fbf8ff;--card:#fff;--ink:#14121f;--muted:#5d5a75;--line:#e6e0f5;--accent:#6b2bff;--chip:#f1ebff}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
-header{max-width:1200px;margin:0 auto;padding:56px 16px 24px}
-h1{font:600 clamp(32px,6vw,56px)/1.05 Fraunces,Georgia,serif;margin:0 0 12px;letter-spacing:-.02em}
-h1 em{color:var(--accent);font-style:normal}
-.lede{max-width:640px;color:var(--muted);font-size:17px;margin:0}
-.subject{margin-top:18px;display:inline-block;background:var(--chip);padding:8px 12px;border-radius:8px;font-size:14px}
-.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;
+  background-image:radial-gradient(600px 400px at 10% -10%,#ff4fd833,transparent),radial-gradient(700px 500px at 100% 0,#4fc3ff2e,transparent)}
+header{max-width:1200px;margin:0 auto;padding:64px 16px 28px}
+.tag{display:inline-block;font:700 12px "Space Grotesk";letter-spacing:.12em;text-transform:uppercase;background:var(--accent);color:#0b0b12;padding:6px 12px;border-radius:999px;transform:rotate(-2deg)}
+h1{font:700 clamp(40px,8vw,88px)/.95 "Space Grotesk",sans-serif;margin:18px 0 16px;letter-spacing:-.04em}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--pink),var(--blue),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{max-width:680px;color:var(--muted);font-size:18px;margin:0}
+.subject{margin-top:20px;display:inline-block;background:var(--chip);border:1px dashed var(--line);padding:8px 14px;border-radius:12px;font-size:14px}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .bar-in{max-width:1200px;margin:0 auto;padding:12px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-input{flex:1 1 220px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
-.cats{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1 1 100%}
-.cats button{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;border-radius:999px;font:500 13px Inter;cursor:pointer}
-.cats button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+input{flex:1 1 220px;padding:12px 16px;border:2px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);font:inherit}
+.cats{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;flex:1 1 100%}
+.cats button{white-space:nowrap;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:999px;font:600 13px "Space Grotesk";cursor:pointer;transition:transform .15s}
+.cats button:hover{transform:translateY(-2px)}
+.cats button[aria-pressed=true]{background:var(--accent);color:#0b0b12;border-color:var(--accent)}
 main{max-width:1200px;margin:0 auto;padding:24px 16px 80px}
-.count{color:var(--muted);font-size:13px;margin-bottom:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.pic{aspect-ratio:4/3;background:linear-gradient(135deg,var(--chip),var(--line));display:grid;place-items:center;color:var(--muted);font-size:13px}
+.count{color:var(--muted);font:600 13px "Space Grotesk";margin-bottom:14px;text-transform:uppercase;letter-spacing:.1em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-4px) rotate(-.4deg);border-color:var(--accent);box-shadow:6px 6px 0 var(--accent)}
+.pic{aspect-ratio:4/3;background:linear-gradient(135deg,#ff4fd855,#4fc3ff55);display:grid;place-items:center;color:var(--muted);font-size:13px}
 .pic img{width:100%;height:100%;object-fit:cover;display:block}
 .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
-.cmd{font:600 18px ui-monospace,Consolas,monospace;color:var(--accent)}
-.cat{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.cmd{font:700 22px "Space Grotesk",monospace;color:var(--accent)}
+.cat{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
 .meaning{margin:0;flex:1}
-.copy{margin-top:8px;align-self:flex-start;border:0;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font:600 13px Inter;cursor:pointer}
-.copy:focus-visible,.cats button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.copy{margin-top:8px;align-self:flex-start;border:0;background:linear-gradient(90deg,var(--pink),var(--blue));color:#fff;padding:9px 16px;border-radius:12px;font:700 13px "Space Grotesk";cursor:pointer}
+.copy:active{transform:scale(.96)}
+.copy:focus-visible,.cats button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 40px}
+code{background:var(--chip);padding:2px 6px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <header>
-  <h1>One picture. <em>215</em> slash commands.</h1>
+  <span class="tag">✨ prompt cheat codes</span>
+  <h1>Same pic.<br><em>215 vibes.</em></h1>
   <p class="lede">Add a short slash command to any AI image prompt (Gemini, ChatGPT, Midjourney, Firefly) to control the camera, light, mood or style. Every example below starts from the same subject, so you can see exactly what each command changes. <strong>New for students:</strong> 18 learning commands that explain one concept (photosynthesis) as a diagram, flowchart, mind map, comic and more.</p>
   <div class="subject" id="subject"></div>
 </header>
@@ -80,7 +88,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 40px}
   }
   grid.onclick = async e => { const b = e.target.closest('.copy'); if (!b) return;
     await navigator.clipboard.writeText(prompt(data.commands[b.dataset.i]));
-    b.textContent = 'Copied!'; setTimeout(() => b.textContent = 'Copy prompt', 1500); };
+    b.textContent = 'Copied ✓ go create'; setTimeout(() => b.textContent = 'Copy prompt', 1500); };
   render();
 })();
 </script>
